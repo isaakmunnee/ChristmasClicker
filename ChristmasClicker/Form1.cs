@@ -90,7 +90,52 @@ namespace ChristmasClicker
         {
             label1.Text = String.Format("Total Delivered: {0}", ClickerSystem.totalDelivered);
             label2.Text = String.Format("Total Clicks: {0}", ClickerSystem.totalPlayerClicks);
-            label3.Text = String.Format("Time Elapsed: {0}", ClickerSystem.timeInSeconds);
+            label3.Text = String.Format("Time Elapsed: {1:00}:{2:00}:{0:0.00}", 
+                ClickerSystem.timeInSeconds % 60, 
+                ClickerSystem.timeInSeconds/3600, 
+                (ClickerSystem.timeInSeconds / 60) % 60);
+            label4.Text = String.Format("Total Smiles: {0}", ClickerSystem.Smiles);
+            label5.Text = String.Format("Worker click rate: {0}ms", ClickerSystem.ticksBeforeClick*10);
+        }
+
+        private void pictureBox2_Click(object sender, MouseEventArgs e)
+        {
+            ClickerSystem.AddClickViaPlayer();
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '=')
+                ChEaT();
+
+            if (!ClickerSystem.cheatMode)
+                return;
+
+            switch (e.KeyChar)
+            {
+                case 'c':
+                case 'x':
+                case 'z':
+                case 'm':
+                case 'n':
+                case 'b':
+                    ClickerSystem.AddClickViaPlayer();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void ChEaT()
+        {
+            CheatMode cmd = new CheatMode();
+            cmd.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Store sd = new Store();
+            sd.ShowDialog();
         }
     }
 }

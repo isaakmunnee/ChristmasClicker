@@ -10,10 +10,18 @@ namespace ChristmasClicker.Worker
     {
         public enum WorkerType
         {
-            Parent = 1,
-            Elf = 5,
-            Robot = 15,
-            Drone = 25
+            Parent = 5,
+            Grandparent = 15,
+            SugarDaddy = 50,
+            CreditCard = 100,
+            Elf = 500,
+            Workshop = 1000,
+            ReindeerTeam = 5000,
+            SugarElven = 50000,
+            SugarReindeer = 250000,
+            Sugar = 1000000,
+            Splendid = 5000000,
+            Santa = 50000000
         }
 
         public Worker(WorkerType t)
