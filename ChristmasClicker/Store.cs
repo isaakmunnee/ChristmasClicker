@@ -105,5 +105,10 @@ namespace ChristmasClicker
             ClickerSystem.Buy(11);
             RefreshButtons();
         }
+
+        private void Store_Load(object sender, EventArgs e)
+        {
+            RefreshButtons();
+        }
     }
 }

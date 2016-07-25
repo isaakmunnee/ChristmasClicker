@@ -17,9 +17,9 @@ namespace ChristmasClicker
 
         public static int ticksBeforeClick;
 
-        public static int td;
-        public static int tdlag;
-        public static int totalDelivered
+        public static long td;
+        public static long tdlag;
+        public static long totalDelivered
         {
             get
             {
