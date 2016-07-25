@@ -16,6 +16,7 @@ namespace ChristmasClicker
         public static int deltaTicks;
 
         public static int ticksBeforeClick;
+        public static int ticklevel;
 
         public static long td;
         public static long tdlag;
@@ -274,6 +275,55 @@ namespace ChristmasClicker
             deltaTicks = 0;
             totalRelitiveClicks++;
             ClickWorkers();
+        }
+
+        public static void BuySpeedUpgrade()
+        {
+            if (Smiles < priceOfSpeedUpgrade(ticklevel))
+                return;
+
+            Smiles -= priceOfSpeedUpgrade(ticklevel);
+            ticksBeforeClick -= 5;
+            ticklevel++;
+        }
+
+        public static int priceOfSpeedUpgrade(int level)
+        {
+            switch (level)
+            {
+                case 0:
+                    return 10;
+                case 1:
+                    return 100;
+                case 2:
+                    return 1000;
+                case 3:
+                    return 2500;
+                case 4:
+                    return 5000;
+                case 5:
+                    return 10000;
+                case 6:
+                    return 50000;
+                case 7:
+                    return 100000;
+                case 8:
+                    return 500000;
+                case 9:
+                    return 1000000;
+                case 10:
+                    return 5000000;
+                case 11:
+                    return 10000000;
+                case 12:
+                    return 50000000;
+                case 13:
+                    return 100000000;
+                default:
+                    return 200000000;
+
+
+            }
         }
     }
 }

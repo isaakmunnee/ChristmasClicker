@@ -110,5 +110,10 @@ namespace ChristmasClicker
         {
             RefreshButtons();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuySpeedUpgrade();
+        }
     }
 }

@@ -218,6 +218,7 @@
             this.button13.TabIndex = 1;
             this.button13.Text = "Increase Worker Rate (50ms)";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // Store
             // 
