@@ -13,13 +13,13 @@ namespace ChristmasClicker
         public static DateTime start = DateTime.Now;
         public static DateTime end = start.AddMinutes(10);
 
-        public static int totalTicks;
-        public static int totalRelitiveClicks;
+        public static long totalTicks;
+        public static long totalRelitiveClicks;
 
-        public static int deltaTicks;
+        public static long deltaTicks;
 
-        public static int ticksBeforeClick;
-        public static int ticklevel;
+        public static long ticksBeforeClick;
+        public static long ticklevel;
 
         public static long td;
         public static long tdlag;
@@ -40,31 +40,31 @@ namespace ChristmasClicker
         public static long playerDelivered;
         public static long totalPlayerClicks;
 
-        public static long playerClickModifier;
+        public static long playerClickModifier = 1;
 
         public static long workerClicks;
         public static long workerDeliveries;
 
         public static long Smiles = 0;
 
-        public static int Parent = 0;
-        public static int Grandparent = 0;
-        public static int SugarDaddy = 0;
-        public static int CreditCard = 0;
-        public static int Elf = 0;
-        public static int Workshop = 0;
-        public static int ReindeerTeam = 0;
-        public static int SugarElven = 0;
-        public static int SugarReindeer = 0;
-        public static int Sugar = 0;
-        public static int Splendid = 0;
-        public static int Santa = 0;
+        public static long Parent = 0;
+        public static long Grandparent = 0;
+        public static long SugarDaddy = 0;
+        public static long CreditCard = 0;
+        public static long Elf = 0;
+        public static long Workshop = 0;
+        public static long ReindeerTeam = 0;
+        public static long SugarElven = 0;
+        public static long SugarReindeer = 0;
+        public static long Sugar = 0;
+        public static long Splendid = 0;
+        public static long Santa = 0;
 
         public static float cps;
         public static float deltaclique;
         public static float lagclique;
 
-        public static void Buy(int code)
+        public static void Buy(long code)
         {
             switch (code)
             {
@@ -193,7 +193,7 @@ namespace ChristmasClicker
 
         public static void ClickWorkers()
         {
-            int local = 0;
+            long local = 0;
             local += Parent * 5;
             local += Grandparent * 15;
             local += SugarDaddy * 50;
@@ -231,7 +231,7 @@ namespace ChristmasClicker
         {
             totalPlayerClicks++;
             td += playerClickModifier;
-            tdlag += (int)Math.Ceiling(playerClickModifier / 2f);
+            tdlag += (long)Math.Ceiling(playerClickModifier / 2f);
             playerDelivered += playerClickModifier;
         }
 
@@ -239,8 +239,8 @@ namespace ChristmasClicker
         public static void WorkerClick(Worker.Worker.WorkerType addition)
         {
             workerClicks += 1;
-            totalDelivered += (int)addition;
-            workerDeliveries += (int)addition;
+            totalDelivered += (long)addition;
+            workerDeliveries += (long)addition;
         }
         */
 
@@ -249,7 +249,6 @@ namespace ChristmasClicker
             totalDelivered = 0;
             playerDelivered = 0;
             totalRelitiveClicks = 0;
-            playerClickModifier = 1;
             workerClicks = 0;
             workerDeliveries = 0;
             ticksBeforeClick = 100;
@@ -263,7 +262,7 @@ namespace ChristmasClicker
             deltaTicks++;
             if (deltaTicks * 5 > ticksBeforeClick)
             {
-                Smiles += (int)Math.Pow(tdlag, 3f / 4f);
+                Smiles += (long)Math.Pow(tdlag, 3f / 4f);
                 tdlag /= 2;
             }
 
@@ -292,7 +291,7 @@ namespace ChristmasClicker
             ticklevel++;
         }
 
-        public static long priceOfSpeedUpgrade(int level)
+        public static long priceOfSpeedUpgrade(long level)
         {
             switch (level)
             {
@@ -331,7 +330,7 @@ namespace ChristmasClicker
             }
         }
 
-        public static void PresentsToSmiles(int code)
+        public static void PresentsToSmiles(long code)
         {
             switch (code)
             {
@@ -355,7 +354,7 @@ namespace ChristmasClicker
                     if (ClickerSystem.totalDelivered < 5000000)
                         return;
 
-                    ClickerSystem.totalDelivered -= 5000000;
+                    ClickerSystem.totalDelivered -= 50000000;
                     ClickerSystem.Smiles += 2500000;
                     return;
 
@@ -448,7 +447,7 @@ namespace ChristmasClicker
                     return null;
             }
         }
-        public static void BuyClickingUpgrade(int code)
+        public static void BuyClickingUpgrade(long code)
         {
             ClickLevel cl = Qlickque(code);
 
