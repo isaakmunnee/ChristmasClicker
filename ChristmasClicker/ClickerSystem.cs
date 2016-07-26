@@ -456,7 +456,7 @@ namespace ChristmasClicker
                 return;
 
             Smiles -= cl.cost;
-            playerClickModifier = cl.upgrade;
+            playerClickModifier += cl.upgrade;
         }
     }
 }

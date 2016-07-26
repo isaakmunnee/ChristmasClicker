@@ -90,9 +90,9 @@ namespace ChristmasClicker
         {
             label1.Text = String.Format("Total Delivered: {0}", ClickerSystem.totalDelivered);
             label2.Text = String.Format("Total Clicks: {0}", ClickerSystem.totalPlayerClicks);
-            label3.Text = String.Format("Time Left: {1:00}:{0:00.00}",
-                ClickerSystem.end.Subtract(DateTime.Now).TotalSeconds % 60,
-                Math.Floor(ClickerSystem.end.Subtract(DateTime.Now).TotalSeconds / 60f) % 60);
+            label3.Text = String.Format("Time Elapsed: {1:00}:{0:00.00}",
+                DateTime.Now.Subtract(ClickerSystem.start).TotalSeconds % 60,
+                Math.Floor(DateTime.Now.Subtract(ClickerSystem.start).TotalSeconds / 60f) % 60);
                 //ClickerSystem.timeInSecondsLeft % 60,
                 //Math.Floor(ClickerSystem.timeInSecondsLeft / 60f) % 60);
             label4.Text = String.Format("Total Smiles: {0}", ClickerSystem.Smiles);
@@ -107,25 +107,7 @@ namespace ChristmasClicker
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == '=')
-                ChEaT();
 
-            if (!ClickerSystem.cheatMode)
-                return;
-
-            switch (e.KeyChar)
-            {
-                case 'c':
-                case 'x':
-                case 'z':
-                case 'm':
-                case 'n':
-                case 'b':
-                    ClickerSystem.AddClickViaPlayer();
-                    break;
-                default:
-                    break;
-            }
         }
 
         private void ChEaT()
@@ -138,6 +120,11 @@ namespace ChristmasClicker
         {
             Store sd = new Store();
             sd.ShowDialog();
+        }
+
+        private void Form1_KeyPress(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }
