@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* Completely useless lmao. Everything needed is in the clicker system class.
 namespace ChristmasClicker.Worker
 {
     public class Worker
@@ -31,9 +32,11 @@ namespace ChristmasClicker.Worker
         
         public WorkerType type;
 
+        // New system implemented. //
         public void Tick()
         {
             ClickerSystem.WorkerClick(type);
         }
     }
 }
+*/

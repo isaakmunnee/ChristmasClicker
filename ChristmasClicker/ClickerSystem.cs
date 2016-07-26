@@ -43,7 +43,7 @@ namespace ChristmasClicker
 
         public static float timeInSeconds;
 
-        public static int Smiles = 0;
+        public static long Smiles = 0;
 
         public static int Parent = 0;
         public static int Grandparent = 0;
@@ -228,12 +228,14 @@ namespace ChristmasClicker
             playerDelivered += playerClickModifier;
         }
 
+        /* New system Implemented
         public static void WorkerClick(Worker.Worker.WorkerType addition)
         {
             workerClicks += 1;
             totalDelivered += (int)addition;
             workerDeliveries += (int)addition;
         }
+        */
 
         public static void Initialise()
         {
@@ -287,7 +289,7 @@ namespace ChristmasClicker
             ticklevel++;
         }
 
-        public static int priceOfSpeedUpgrade(int level)
+        public static long priceOfSpeedUpgrade(int level)
         {
             switch (level)
             {
@@ -296,31 +298,31 @@ namespace ChristmasClicker
                 case 1:
                     return 100;
                 case 2:
-                    return 1000;
+                    return 1000;        //1k
                 case 3:
-                    return 2500;
+                    return 5000;        //5k
                 case 4:
-                    return 5000;
+                    return 10000;       //10k
                 case 5:
-                    return 10000;
+                    return 50000;       //50k
                 case 6:
-                    return 50000;
+                    return 100000;      //100k
                 case 7:
-                    return 100000;
+                    return 500000;      //500k
                 case 8:
-                    return 500000;
+                    return 1000000;     //1mil
                 case 9:
-                    return 1000000;
+                    return 5000000;     //5mil
                 case 10:
-                    return 5000000;
+                    return 10000000;    //10mil
                 case 11:
-                    return 10000000;
+                    return 50000000;    //50mil
                 case 12:
-                    return 50000000;
+                    return 100000000;   //100mil
                 case 13:
-                    return 100000000;
+                    return 500000000;   //500mil
                 default:
-                    return 200000000;
+                    return 1000000000;  //1billion
 
 
             }
