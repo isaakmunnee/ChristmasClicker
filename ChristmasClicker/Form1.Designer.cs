@@ -123,11 +123,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Sitka Banner", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(43, 46);
+            this.label1.Location = new System.Drawing.Point(47, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 36);
+            this.label1.Size = new System.Drawing.Size(272, 53);
             this.label1.TabIndex = 5;
             this.label1.Text = "Total Delivered: 0";
             // 
@@ -135,11 +135,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Sitka Banner", 21.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(43, 80);
+            this.label2.Location = new System.Drawing.Point(62, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 36);
+            this.label2.Size = new System.Drawing.Size(175, 42);
             this.label2.TabIndex = 6;
             this.label2.Text = "Total Clicks: 0";
             // 
@@ -147,11 +147,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(41, 346);
+            this.label3.Location = new System.Drawing.Point(56, 345);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 37);
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(172, 37);
             this.label3.TabIndex = 7;
             this.label3.Text = "Time Left: 0";
             // 
@@ -159,11 +160,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(43, 310);
+            this.label4.Location = new System.Drawing.Point(56, 308);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(229, 37);
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.Size = new System.Drawing.Size(208, 37);
             this.label4.TabIndex = 8;
             this.label4.Text = "Total Smiles: 0";
             // 
@@ -171,11 +173,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Sitka Banner", 21.75F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(42, 152);
+            this.label5.Location = new System.Drawing.Point(62, 181);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 36);
+            this.label5.Size = new System.Drawing.Size(321, 42);
             this.label5.TabIndex = 9;
             this.label5.Text = "Worker Click Rate: 1000ms";
             // 
@@ -183,11 +185,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Sitka Banner", 21.75F);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(42, 116);
+            this.label6.Location = new System.Drawing.Point(62, 139);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(337, 36);
+            this.label6.Size = new System.Drawing.Size(321, 42);
             this.label6.TabIndex = 10;
             this.label6.Text = "Worker Click Rate: 1000ms";
             // 

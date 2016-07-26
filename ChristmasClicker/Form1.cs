@@ -88,14 +88,15 @@ namespace ChristmasClicker
 
         private void RefreshValues(object sender, EventArgs e)
         {
-            label1.Text = String.Format("Total Delivered: {0}", ClickerSystem.totalDelivered);
-            label2.Text = String.Format("Total Clicks: {0}", ClickerSystem.totalPlayerClicks);
-            label3.Text = String.Format("Time Elapsed: {1:00}:{0:00.00}",
+            label1.Text = String.Format("Total Delivered: {0:n0}", ClickerSystem.totalDelivered);
+            label2.Text = String.Format("Total Clicks: {0:n0}", ClickerSystem.totalPlayerClicks);
+            label3.Text = String.Format("Time Elapsed: {2:0}:{1:00}:{0:00.00}",
                 DateTime.Now.Subtract(ClickerSystem.start).TotalSeconds % 60,
-                Math.Floor(DateTime.Now.Subtract(ClickerSystem.start).TotalSeconds / 60f) % 60);
+                Math.Floor(DateTime.Now.Subtract(ClickerSystem.start).TotalSeconds / 60f) % 60,
+                Math.Floor(DateTime.Now.Subtract(ClickerSystem.start).TotalSeconds / 3600f));
                 //ClickerSystem.timeInSecondsLeft % 60,
                 //Math.Floor(ClickerSystem.timeInSecondsLeft / 60f) % 60);
-            label4.Text = String.Format("Total Smiles: {0}", ClickerSystem.Smiles);
+            label4.Text = String.Format("Total Smiles: {0:n0}", ClickerSystem.Smiles);
             label5.Text = String.Format("Worker click rate: {0}ms", ClickerSystem.ticksBeforeClick*10);
             label6.Text = String.Format("Click multiplier: {0}x", ClickerSystem.playerClickModifier);
         }
