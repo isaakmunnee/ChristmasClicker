@@ -115,5 +115,150 @@ namespace ChristmasClicker
         {
             ClickerSystem.BuySpeedUpgrade();
         }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.PresentsToSmiles(0);
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.PresentsToSmiles(1);
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.PresentsToSmiles(2);
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.PresentsToSmiles(3);
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.PresentsToSmiles(4);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(0);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(1);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(2);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(3);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(4);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(5);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(6);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(7);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(8);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(9);
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(10);
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(11);
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(12);
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(13);
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(14);
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(15);
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(16);
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(17);
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(18);
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(19);
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(20);
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(21);
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(22);
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            ClickerSystem.BuyClickingUpgrade(23);
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -146,23 +147,23 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Sitka Text", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(41, 346);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(255, 47);
+            this.label3.Size = new System.Drawing.Size(186, 37);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Time Elapsed: 0";
+            this.label3.Text = "Time Left: 0";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Sitka Text", 24F, System.Drawing.FontStyle.Italic);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(43, 310);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(240, 47);
+            this.label4.Size = new System.Drawing.Size(229, 37);
             this.label4.TabIndex = 8;
             this.label4.Text = "Total Smiles: 0";
             // 
@@ -172,11 +173,23 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(43, 116);
+            this.label5.Location = new System.Drawing.Point(42, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(337, 36);
             this.label5.TabIndex = 9;
             this.label5.Text = "Worker Click Rate: 1000ms";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Candara", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(42, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(337, 36);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Worker Click Rate: 1000ms";
             // 
             // Form1
             // 
@@ -184,6 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ChristmasClicker.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(800, 640);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -221,6 +235,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

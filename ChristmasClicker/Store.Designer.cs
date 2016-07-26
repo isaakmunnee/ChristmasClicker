@@ -311,6 +311,7 @@
             this.button14.TabIndex = 0;
             this.button14.Text = "2x [20☺]";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -320,6 +321,7 @@
             this.button15.TabIndex = 1;
             this.button15.Text = "5x [50☺]";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -329,6 +331,7 @@
             this.button16.TabIndex = 2;
             this.button16.Text = "10x [100☺]";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -338,6 +341,7 @@
             this.button17.TabIndex = 3;
             this.button17.Text = "25x [500☺]";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -347,6 +351,7 @@
             this.button18.TabIndex = 4;
             this.button18.Text = "50x [1k☺]";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -356,6 +361,7 @@
             this.button19.TabIndex = 5;
             this.button19.Text = "100x [5k☺]";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 
@@ -365,6 +371,7 @@
             this.button20.TabIndex = 6;
             this.button20.Text = "250x [10k☺]";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -374,6 +381,7 @@
             this.button21.TabIndex = 7;
             this.button21.Text = "500x [50k☺]";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -383,6 +391,7 @@
             this.button22.TabIndex = 8;
             this.button22.Text = "1k x [100k☺]";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -392,6 +401,7 @@
             this.button23.TabIndex = 9;
             this.button23.Text = "5k x [500k☺]";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -401,6 +411,7 @@
             this.button24.TabIndex = 10;
             this.button24.Text = "10k x [1mil ☺]";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -410,6 +421,7 @@
             this.button25.TabIndex = 11;
             this.button25.Text = "100k x [5mil☺]";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -419,6 +431,7 @@
             this.button26.TabIndex = 12;
             this.button26.Text = "250k x [7mil☺]";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button27
             // 
@@ -428,6 +441,7 @@
             this.button27.TabIndex = 13;
             this.button27.Text = "500k x [10mil☺]";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -437,6 +451,7 @@
             this.button28.TabIndex = 14;
             this.button28.Text = "1mil x [50mil☺]";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button29
             // 
@@ -446,6 +461,7 @@
             this.button29.TabIndex = 15;
             this.button29.Text = "5mil x [150mil☺]";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
@@ -455,6 +471,7 @@
             this.button30.TabIndex = 16;
             this.button30.Text = "10mil x [250mil☺]";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
@@ -464,6 +481,7 @@
             this.button31.TabIndex = 17;
             this.button31.Text = "25mil x [500mil☺]";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
@@ -473,6 +491,7 @@
             this.button32.TabIndex = 18;
             this.button32.Text = "50mil x [750mil☺]";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button33
             // 
@@ -482,6 +501,7 @@
             this.button33.TabIndex = 19;
             this.button33.Text = "100mil x [1b☺]";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // button34
             // 
@@ -491,6 +511,7 @@
             this.button34.TabIndex = 20;
             this.button34.Text = "500mil x [10b☺]";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button35
             // 
@@ -500,6 +521,7 @@
             this.button35.TabIndex = 21;
             this.button35.Text = "1b x [100b☺]";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button36
             // 
@@ -509,6 +531,7 @@
             this.button36.TabIndex = 22;
             this.button36.Text = "5b x [1tril☺]";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button37
             // 
@@ -518,6 +541,7 @@
             this.button37.TabIndex = 23;
             this.button37.Text = "10bil x [10tril☺]";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // tabPage3
             // 
@@ -542,6 +566,7 @@
             this.button38.TabIndex = 0;
             this.button38.Text = "100 presents -> 1 smile";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // button39
             // 
@@ -551,6 +576,7 @@
             this.button39.TabIndex = 1;
             this.button39.Text = "100k presents -> 1k smile";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // button40
             // 
@@ -560,6 +586,7 @@
             this.button40.TabIndex = 2;
             this.button40.Text = "50mil presents -> 2.5mil smile";
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // button41
             // 
@@ -569,6 +596,7 @@
             this.button41.TabIndex = 3;
             this.button41.Text = "1billion presents -> 50mil smile";
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // button42
             // 
@@ -578,6 +606,7 @@
             this.button42.TabIndex = 4;
             this.button42.Text = "10billion presents -> 450mil smile";
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // Store
             // 

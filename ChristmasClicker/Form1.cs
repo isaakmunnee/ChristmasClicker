@@ -90,12 +90,14 @@ namespace ChristmasClicker
         {
             label1.Text = String.Format("Total Delivered: {0}", ClickerSystem.totalDelivered);
             label2.Text = String.Format("Total Clicks: {0}", ClickerSystem.totalPlayerClicks);
-            label3.Text = String.Format("Time Elapsed: {1:00}:{2:00}:{0:0.00}", 
-                ClickerSystem.timeInSeconds % 60, 
-                ClickerSystem.timeInSeconds/3600, 
-                (ClickerSystem.timeInSeconds / 60) % 60);
+            label3.Text = String.Format("Time Left: {1:00}:{0:00.00}",
+                ClickerSystem.end.Subtract(DateTime.Now).TotalSeconds % 60,
+                Math.Floor(ClickerSystem.end.Subtract(DateTime.Now).TotalSeconds / 60f) % 60);
+                //ClickerSystem.timeInSecondsLeft % 60,
+                //Math.Floor(ClickerSystem.timeInSecondsLeft / 60f) % 60);
             label4.Text = String.Format("Total Smiles: {0}", ClickerSystem.Smiles);
             label5.Text = String.Format("Worker click rate: {0}ms", ClickerSystem.ticksBeforeClick*10);
+            label6.Text = String.Format("Click multiplier: {0}x", ClickerSystem.playerClickModifier);
         }
 
         private void pictureBox2_Click(object sender, MouseEventArgs e)
